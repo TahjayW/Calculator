@@ -1,7 +1,42 @@
 //JavaScript For Calculator Project May 3rd 2024
 
+function create(id){
+    return document.createElement(`${id}`);
+}
+
+function select(id){
+    return document.querySelector(`${id}`);
+}
+//Selectors For Doc Access
+const body = select("body");
+const container = select("#container")
+const display = select(".display");
+const operatorContainer = select(".operatorContainer");
+const numberButtonContainer = select(".numberButtonContainer");
+const debugBox = select(".debugBox");
 
 
+//Setting up Number Buttons
+
+//Prototype (not really lol)
+const arrayOfButtons = [];
+
+class numberBtn {
+    elementValue = 0;
+}
+
+for(i = 0; i<10; i++){
+    const btnLink = create("btn");
+    btnLink.classList = "numberBtn";
+    btnLink.id = `btn #${i}`;
+    btnLink.textContent = i;
+    let item = new numberBtn;
+    item.elementValue = i;
+    arrayOfButtons.splice(arrayOfButtons.length,0,item);
+    console.table(arrayOfButtons)
+    numberButtonContainer.append(btnLink);
+
+}
 
 
 //Basic Function Setup
