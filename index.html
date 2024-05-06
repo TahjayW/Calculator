@@ -14,16 +14,21 @@
     <div id=container>
         <div class=display></div>
         <div id="keypad">
-            <div class=numberButtonContainer></div>
-            <div class=operatorContainer>
+            <!--This Column contains "/,*, delete and decimal"-->
+            <div class="mainColumn">
                 <div class="multiplication">*</div>
                 <div class="division">/</div>
+                <div class="delete">DEL</div>
+                <div class="decimal">.</div>
+            </div>
+
+            <!--This column contians "+, - and equals"-->
+            <div class=rightColumn>
                 <div class="addition">+</div>
                 <div class="subtraction">-</div>
                 <div class="equals">=</div>
-                <div class="delete">DEL</div>
             </div>
-            
+
         </div>
 
         <div class=debugBox></div>
