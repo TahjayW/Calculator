@@ -1,8 +1,8 @@
 /*This branched Styles sheet is to create a calculator that 
 mimic the motospeed keyboard's layout almost exactly*/
 
-body{
-    display:flex;
+body {
+    display: flex;
     background-color: blue;
     height: 100vh;
     width: 100vh;
@@ -10,36 +10,87 @@ body{
     justify-content: center;
 }
 
-.display{
+.display {
     width: 40vh;
     height: 20vh;
     background-color: white;
 }
 
-#keypad{
-    display:flex;
-    flex:1;
+#keypad {
+    display: flex;
+    flex: 1;
 }
-.mainColumn{
-    display:flex;
+
+.upperOperators {
+    display: flex;
+    width: 30vh;
+    height: 10vh;
+    background-color: orange;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mainColumn {
+    display: flex;
+    flex-direction: row;
+    /*sizing*/
     width: 30vh;
     height: 60vh;
+    /*debug colors*/
     background-color: green;
+    /*formatting*/
+    flex-wrap: wrap;
+
+
 }
-.rightColumn{
+
+#numbers {
+    display: flex;
+    width: 30vh;
+    height: 50vh;
+    background: purple;
+    
+    flex-wrap: wrap-reverse;
+    
+
+}
+
+.rightColumn {
     display: flex;
     flex-direction: column;
     width: 10vh;
     height: 60vh;
     background-color: red;
+    align-items: center;
+
 }
 
+.oprBtn {
+    font-size: 45px;
 
-.numberBtn{
-    flex:1;
+
+}
+
+.numberBtn, .decimal {
+    text-align: center;
+    font-size: 45px;
+    text-align: center;
+    flex: 1, 0, 0;
+    width: 10vh;
+    vertical-align: middle;
+    line-height: 10vh;
     
-    font-size: 5vh;
 }
+
 /*CREATE SELECTOR FOR 
 0, + and EQUALS TO BE FLEX 2
 */
+#btn0,
+.addition,
+.equals {
+    flex-grow: 2;
+    font-size: 45px;
+}
+#btn0{
+    width: 20vh;
+}

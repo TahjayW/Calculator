@@ -11,8 +11,8 @@ function select(id) {
 const body = select("body");
 const container = select("#container")
 const display = select(".display");
-const operatorContainer = select(".rightColumn");
-const numberButtonContainer = select(".numberButtonContainer");
+const rightColumn = select(".rightColumn");
+const mainColumn = select(".mainColumn");
 const debugBox = select(".debugBox");
 
 
@@ -27,7 +27,7 @@ const arrayOfButtons = [];
 for (i = 0; i < 10; i++) {
     const btnLink = create("btn");
     btnLink.classList = "numberBtn";
-    btnLink.id = `btn #${i}`;
+    btnLink.id = `btn${i}`;
     btnLink.textContent = i;
     //Create Object with value tied to button
     const buttonObject = {
@@ -38,7 +38,7 @@ for (i = 0; i < 10; i++) {
     arrayOfButtons.splice(arrayOfButtons.length, 0, buttonObject);
 
     //Append to doc
-    numberButtonContainer.append(btnLink);
+    numbers.append(btnLink);
 
 }
 
