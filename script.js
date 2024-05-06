@@ -11,9 +11,10 @@ function select(id) {
 const body = select("body");
 const container = select("#container")
 const display = select(".display");
-const operatorContainer = select(".operatorContainer");
+const operatorContainer = select(".rightColumn");
 const numberButtonContainer = select(".numberButtonContainer");
 const debugBox = select(".debugBox");
+
 
 
 

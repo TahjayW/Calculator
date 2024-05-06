@@ -6,6 +6,8 @@ body{
     background-color: blue;
     height: 100vh;
     width: 100vh;
+    align-items: center;
+    justify-content: center;
 }
 
 .display{
@@ -14,8 +16,30 @@ body{
     background-color: white;
 }
 
+#keypad{
+    display:flex;
+    flex:1;
+}
 .mainColumn{
+    display:flex;
     width: 30vh;
     height: 60vh;
     background-color: green;
 }
+.rightColumn{
+    display: flex;
+    flex-direction: column;
+    width: 10vh;
+    height: 60vh;
+    background-color: red;
+}
+
+
+.numberBtn{
+    flex:1;
+    
+    font-size: 5vh;
+}
+/*CREATE SELECTOR FOR 
+0, + and EQUALS TO BE FLEX 2
+*/
