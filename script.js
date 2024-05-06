@@ -14,6 +14,10 @@ const display = select(".display");
 const rightColumn = select(".rightColumn");
 const mainColumn = select(".mainColumn");
 const debugBox = select(".debugBox");
+const userInput = select(".userInputDisplay");
+const selectedOperatorDisplay = select(".selectedOperatorDisplay");
+const computedResultDisplay = select(".computedResultDisplay");
+
 
 
 
