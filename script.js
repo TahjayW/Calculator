@@ -1,10 +1,10 @@
 //JavaScript For Calculator Project May 3rd 2024
 
-function create(id){
+function create(id) {
     return document.createElement(`${id}`);
 }
 
-function select(id){
+function select(id) {
     return document.querySelector(`${id}`);
 }
 //Selectors For Doc Access
@@ -16,24 +16,27 @@ const numberButtonContainer = select(".numberButtonContainer");
 const debugBox = select(".debugBox");
 
 
+
+
+
+
+
 //Setting up Number Buttons
-
-//Prototype (not really lol)
 const arrayOfButtons = [];
-
-class numberBtn {
-    elementValue = 0;
-}
-
-for(i = 0; i<10; i++){
+for (i = 0; i < 10; i++) {
     const btnLink = create("btn");
     btnLink.classList = "numberBtn";
     btnLink.id = `btn #${i}`;
     btnLink.textContent = i;
-    let item = new numberBtn;
-    item.elementValue = i;
-    arrayOfButtons.splice(arrayOfButtons.length,0,item);
-    console.table(arrayOfButtons)
+    //Create Object with value tied to button
+    const buttonObject = {
+        value: i,
+    }
+
+    //Add buttonObject to array of objects
+    arrayOfButtons.splice(arrayOfButtons.length, 0, buttonObject);
+
+    //Append to doc
     numberButtonContainer.append(btnLink);
 
 }
@@ -43,25 +46,25 @@ for(i = 0; i<10; i++){
 
 
 
-function addition(a,b){
-return a+b;
+function addition(a, b) {
+    return a + b;
 }
 
-function substraction(a,b){
-return a-b;
+function substraction(a, b) {
+    return a - b;
 }
 
-function multiplication(a,b){
-return a*b;
+function multiplication(a, b) {
+    return a * b;
 }
 
-function division(a,b){
+function division(a, b) {
 
     //div by 0 case
-    if((a===0) || (b==0)){
+    if ((a === 0) || (b == 0)) {
         return "Bro come on.";
-    } else{
-        return a/b;
+    } else {
+        return a / b;
     }
 
 }
@@ -75,7 +78,7 @@ function division(a,b){
 //OR
 //A number, operation, number and then ANOTHER operation was entered
 
-function operate(){
+function operate() {
     //Depending on event listener will decide type of operation to transpire
 
     //cases:

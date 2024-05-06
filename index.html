@@ -1,21 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Modest Online Calculator</title>
-    <link rel = "stylesheet" href = "styles.css">
-    <script src = "script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
-<body>
-<h1>debug</h1>
-<div id= container >
-    <div class = display></div>
-    <div class = operatorContainer></div>
-    <div class = numberButtonContainer></div>
-    <div class = debugBox></div>
 
-</div>
-    
+<body>
+
+    <div id=container>
+        <div class=display></div>
+        <div id="keypad">
+            <div class=numberButtonContainer></div>
+            <div class=operatorContainer>
+                <div class="multiplication">*</div>
+                <div class="division">/</div>
+                <div class="addition">+</div>
+                <div class="subtraction">-</div>
+                <div class="equals">=</div>
+                <div class="delete">DEL</div>
+            </div>
+            
+        </div>
+
+        <div class=debugBox></div>
+
+    </div>
+
 </body>
+
 </html>
