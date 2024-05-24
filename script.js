@@ -66,7 +66,7 @@ function multiplication(a, b) {
 function division(a, b) {
 
     //div by 0 case
-    if ((a === 0) || (b == 0)) {
+    if (b == 0) {
         return "Bro come on.";
     } else {
         return a / b;
