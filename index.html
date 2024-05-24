@@ -1,3 +1,4 @@
+.
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,30 +14,36 @@
 
     <div id=container>
         <div class=display>
-            <div class = "userInputDisplay"></div>
-            <div class = "selectedOperatorDisplay"></div>
-            <div class = "computedResultDisplay"> </div>
+            <div class="topHalfWrapper">
+                <div class="userInputDisplay">user input</div>
+                <div class="selectedOperatorDisplay">selected operator</div>
+            </div>
+            <div class="bottomHalfWrapper">
+                <div class="computedResultDisplay"> computed results</div>
+            </div>
+
+
         </div>
         <div id="keypad">
             <!--This Column contains "/,*, delete and decimal"-->
             <div class="mainColumn">
-                <div class = "upperOperators">
+                <div class="upperOperators">
                     <div class="multiplication oprBtn">*</div>
                     <div class="division oprBtn">/</div>
                     <div class="delete oprBtn">D</div>
-                    
+
                 </div>
-                <div id = "numbers">
+                <div id="numbers">
                     <div class="decimal oprBtn">.</div>
                 </div>
-               
+
             </div>
 
             <!--This column contians "+, - and equals"-->
             <div class=rightColumn>
                 <div class="subtraction oprBtn">-</div>
                 <div class="addition oprBtn">+</div>
-                
+
                 <div class="equals oprBtn">=</div>
             </div>
 

@@ -16,8 +16,14 @@ body {
     height: 20vh;
     background-color: white;
     justify-content: center;
+    flex-direction: column;
 }
 
+.topHalfWrapper, .bottomHalfWrapper{
+    display: flex;
+    height: 10vh;
+    width: 40vh;
+}
 
 #keypad {
     display: flex;
@@ -25,21 +31,21 @@ body {
 }
 
 
+
 .selectedOperatorDisplay, .userInputDisplay, .computedResultDisplay{
     display: flex;
-    
+    flex:1;
+    font-size: 20px;
 }
 
 .userInputDisplay{
-    font-size: 30px;
+    
     width: 15vh;
     height: 10vh;
 }
 .selectedOperatorDisplay{
     height: 10vh;
     width: 15vh;
-    font-size: 30px;
-    text-align: right;
     background-color: green; /*debug*/
 }
 
@@ -49,8 +55,7 @@ body {
 .computedResultDisplay{
     background-color: yellow;
     height: 10vh;
-    width: 15vh;
-}
+    }
 
 /*Need to push yellow to the bottom left and keep aligned*/
 
